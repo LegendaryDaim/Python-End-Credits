@@ -6,7 +6,6 @@ import config as c
 # TODO Make PIL draw pictures
 flag_is_right_upper = True
 
-
 def create_image(text):
     size = c.width, c.height
     start_pos = c.height # 500    # 500 is temporary
@@ -17,9 +16,9 @@ def create_image(text):
     else:
         font_dir = '/Library/Fonts/'
 
-    fnt_left = ImageFont.truetype(f'{font_dir}{c.font_left}', {c.font_left_size})
-    fnt_right = ImageFont.truetype(f'{font_dir}{c.font_right}', {c.font_right_size})
-    fnt_center = ImageFont.truetype(f'{font_dir}{c.font_center}', {c.font_center_size})
+    fnt_left = ImageFont.truetype(f'{font_dir}{c.font_left}', 30)
+    fnt_right = ImageFont.truetype(f'{font_dir}{c.font_right}', 36)
+    fnt_center = ImageFont.truetype(f'{font_dir}{c.font_center}', 45)
 
     # format text
     for frame in range(0, c.length_frames):

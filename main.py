@@ -25,7 +25,6 @@ class MainWindow:
         self.ui = Ui_CreditsRoll()
         self.ui.setupUi(self.main_win)
 
-
         # Connect signal to slots. Button Activates Functions
         self.ui.name_of_sheet.setText(title_sheet)
 

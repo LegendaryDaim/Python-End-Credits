@@ -21,9 +21,8 @@ tot_rows = 23
 length_frames = int((height + spacing * tot_rows) / speed)  # formula for calculating lenght of the comp
 
 # set font
-font_left, font_left_size = "TREBUC" + ".ttf", 30
-font_right, font_right_size = "TREBUC" + ".ttf", 36
-font_center, font_center_size = "TREBUC" + ".ttf", 45
+font_left = "TREBUC" + ".ttf"
+font_right = "TREBUC" + ".ttf"
+font_center = "TREBUC" + ".ttf"
 
 print("config Loaded")
-print(str(height) + " Height before change")
