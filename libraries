@@ -1,7 +1,12 @@
 # Python Version Python 3.6.2
-pip install gspread         # gspread-3.6.0  Installs automatically
-pip install pillow          # pillow-8.0.1  if not installed, text gets wrong
-pip install ffmpeg-python   # ffmpeg-python-0.2.0 future-0.18.2
-pip install PyQt5           #
+# Copy and paste into terminal
+pip install gspread
+pip install pillow
+pip install ffmpeg-python
+pip install PyQt5
 
-# todo make modules self installable, just like gspread self installed
+# todo make modules self installable?
+gspread         # gspread-3.6.0  Installs automatically
+pillow          # pillow-8.0.1  if not installed, text gets wrong
+ffmpeg-python   # ffmpeg-python-0.2.0 future-0.18.2
+PyQt5           #

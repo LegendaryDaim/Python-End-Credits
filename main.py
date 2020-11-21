@@ -12,11 +12,6 @@ from form import Ui_CreditsRoll
 title_sheet = ""
 
 # todo commend for console if I forget pyuic5 -x form.ui -o form.py
-# Get information from Google Sheets. I run it first to get title and check connection
-
-#if c.flag_sheet:
-    #main_text, title_sheet = fs.get_sheet()
-    #print(title_sheet)
 
 # UI WINDOW
 class MainWindow:
