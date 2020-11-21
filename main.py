@@ -64,27 +64,25 @@ class MainWindow:
         fps = self.ui.fps_line.text()
         c.fps = int(fps)
 
-        # Print using this lenght
-        lenght = self.ui.lenght_line.text()
-        c.length_frames = int(lenght)
+        # Print using this length
+        length = self.ui.lenght_line.text()
+        c.length_frames = int(length)
 
-        main_text, title_sheet = fs.get_sheet()  # get sheet data and title
+        main_text, title_sheet = fs.get_sheet()     # get sheet data and title
         if c.flag_create_image:
-            create_image.create_image(main_text)  # Creates an png Image using string
+            create_image.create_image(main_text)    # Creates an png Image using string
         if c.flag_create_video:
-            make_video.make_video()  # # way of getting png into a movie sequece. Can me done on FFmpeg
-        if not c.flag_keep_images_when_done:  # delete images
+            make_video.make_video()                 # way of getting png into a movie sequence. Can me done on FFmpeg
+        if not c.flag_keep_images_when_done:        # deleting images
             os.listdir('images')
             for i in os.listdir('images'):
                 os.remove(f"images/{i}")
 
 # End of Code to run
 
-# Main look or whatever
 if __name__ == '__main__':
     app = QApplication(sys.argv)
     main_win = MainWindow()
     main_win.show()
     sys.exit(app.exec())
 
-# Todo Save list_of_list in a txt file and only fetch information once per run.
