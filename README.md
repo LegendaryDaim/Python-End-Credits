@@ -5,7 +5,7 @@ First coding project and first git push.
 
 Purpose of this code is to create video file from Google Sheets for use as end credits.
 
-It works but a bit junky. 
+It works but a bit junkie. 
 
 Installation:
 * Check libraries file for module list. and install modules.

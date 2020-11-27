@@ -125,15 +125,15 @@ class Ui_CreditsRoll(object):
         self.label_4.setStyleSheet("color: rgb(222, 222, 222);")
         self.label_4.setAlignment(QtCore.Qt.AlignCenter)
         self.label_4.setObjectName("label_4")
-        self.lenght_line = QtWidgets.QLineEdit(self.splitter_4)
+        self.length_line = QtWidgets.QLineEdit(self.splitter_4)
         font = QtGui.QFont()
         font.setPointSize(12)
-        self.lenght_line.setFont(font)
-        self.lenght_line.setStyleSheet("color: rgb(222, 222, 222);\n"
+        self.length_line.setFont(font)
+        self.length_line.setStyleSheet("color: rgb(222, 222, 222);\n"
 "background-color: rgb(122, 122, 122);\n"
 "border-radius: 10;")
-        self.lenght_line.setAlignment(QtCore.Qt.AlignCenter)
-        self.lenght_line.setObjectName("lenght_line")
+        self.length_line.setAlignment(QtCore.Qt.AlignCenter)
+        self.length_line.setObjectName("lenght_line")
         self.gridLayout_6.addWidget(self.splitter_4, 0, 0, 1, 1)
         self.gridLayoutWidget_5 = QtWidgets.QWidget(self.widget)
         self.gridLayoutWidget_5.setGeometry(QtCore.QRect(40, 60, 661, 51))

@@ -18,7 +18,7 @@ spacing = 60  # default 100 spacing between rows
 tot_rows = 23
 
 # Calculating total length of composition needed for the length of the sheet
-length_frames = int((height + spacing * tot_rows) / speed)  # formula for calculating lenght of the comp
+length_frames = int((height + spacing * tot_rows) / speed)  # formula for calculating length of the comp
 
 # set font
 font_left = "TREBUC" + ".ttf"

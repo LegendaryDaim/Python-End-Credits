@@ -11,6 +11,7 @@ from form import Ui_CreditsRoll
 
 title_sheet = ""
 
+
 # todo commend for console if I forget pyuic5 -x form.ui -o form.py
 
 # UI WINDOW
@@ -37,8 +38,8 @@ class MainWindow:
         # fps line
         self.ui.fps_line.setText(str(c.fps))
 
-        # total lenght
-        self.ui.lenght_line.setText(str(c.length_frames))
+        # total length
+        self.ui.length_line.setText(str(c.length_frames))
 
         # END of connect signal to slots
 
@@ -47,9 +48,9 @@ class MainWindow:
 
     # Code to Run and functions goes here
 
-    def button_click(self): # Save link variable
+    def button_click(self):  # Save link variable
         c.link = self.ui.lineEdit.text()
-        print (c.link)
+        print(c.link)
         main_text, title_sheet = fs.get_sheet()
         self.ui.name_of_sheet.setText(title_sheet)
 
@@ -65,18 +66,19 @@ class MainWindow:
         c.fps = int(fps)
 
         # Print using this length
-        length = self.ui.lenght_line.text()
+        length = self.ui.length_line.text()
         c.length_frames = int(length)
 
-        main_text, title_sheet = fs.get_sheet()     # get sheet data and title
+        main_text, title_sheet = fs.get_sheet()  # get sheet data and title
         if c.flag_create_image:
-            create_image.create_image(main_text)    # Creates an png Image using string
+            create_image.create_image(main_text)  # Creates an png Image using string
         if c.flag_create_video:
-            make_video.make_video()                 # way of getting png into a movie sequence. Can me done on FFmpeg
-        if not c.flag_keep_images_when_done:        # deleting images
+            make_video.make_video()  # way of getting png into a movie sequence. Can me done on FFmpeg
+        if not c.flag_keep_images_when_done:  # deleting images
             os.listdir('images')
             for i in os.listdir('images'):
                 os.remove(f"images/{i}")
+
 
 # End of Code to run
 
@@ -85,4 +87,3 @@ if __name__ == '__main__':
     main_win = MainWindow()
     main_win.show()
     sys.exit(app.exec())
-
