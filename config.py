@@ -11,14 +11,12 @@ speed = 2   # default 3 as in speed of scrolling. Might be pixels per frame. Sho
 
 height = 1080
 width = 1920
-
 fps = 24    # default 24 important to avoid jitter
-
 spacing = 60  # default 100 spacing between rows
 
 tot_rows = 23
 
-gap = 50
+gap = 50    # gap between colums
 
 # Calculating total length of composition needed for the length of the sheet
 length_frames = int((height + spacing * tot_rows) / speed)  # formula for calculating length of the comp
