@@ -11,7 +11,6 @@ from form import Ui_CreditsRoll
 
 title_sheet = ""
 
-
 # todo commend for console if I forget pyuic5 -x form.ui -o form.py
 
 # UI WINDOW
@@ -79,11 +78,17 @@ class MainWindow:
             for i in os.listdir('images'):
                 os.remove(f"images/{i}")
 
-
 # End of Code to run
 
-if __name__ == '__main__':
+if __name__ == '__main__' and not c.flag_verbose:
     app = QApplication(sys.argv)
     main_win = MainWindow()
     main_win.show()
     sys.exit(app.exec())
+
+def tempfunc():
+    c.height = 1080 # to make picture print straight away
+    main_text, title_sheet = fs.get_sheet()
+    create_image.create_image(main_text)
+
+tempfunc()
