@@ -86,9 +86,11 @@ if __name__ == '__main__' and not c.flag_verbose:
     main_win.show()
     sys.exit(app.exec())
 
+""" for testing
 def tempfunc():
     c.height = 1080 # to make picture print straight away
     main_text, title_sheet = fs.get_sheet()
     create_image.create_image(main_text)
 
 tempfunc()
+"""

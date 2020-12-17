@@ -4,7 +4,7 @@ flag_sheet = True
 flag_create_image = True
 flag_create_video = False
 flag_keep_images_when_done = False  # Removes *.png images after video is done
-flag_verbose = True
+flag_verbose = False
 
 link = 'https://docs.google.com/spreadsheets/d/11wK2-57CVlX4it5LGqW0bSOHbmm8YkvqB2Oyp1zvtnE/edit#gid=0'
 speed = 2   # default 3 as in speed of scrolling. Might be pixels per frame. Should be safe integer speeds.
