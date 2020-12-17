@@ -2,8 +2,8 @@
 # Temporary Flags for testing or for skipping stuff
 flag_sheet = True
 flag_create_image = True
-flag_create_video = False
-flag_keep_images_when_done = False  # Removes *.png images after video is done
+flag_create_video = True
+flag_delete_images_when_done = False  # Removes *.png images after video is done
 flag_verbose = False
 
 link = 'https://docs.google.com/spreadsheets/d/11wK2-57CVlX4it5LGqW0bSOHbmm8YkvqB2Oyp1zvtnE/edit#gid=0'

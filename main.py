@@ -73,7 +73,7 @@ class MainWindow:
             create_image.create_image(main_text)  # Creates an png Image using string
         if c.flag_create_video:
             make_video.make_video()  # way of getting png into a movie sequence. Can me done on FFmpeg
-        if not c.flag_keep_images_when_done:  # deleting images
+        if c.flag_delete_images_when_done:  # deleting images
             os.listdir('images')
             for i in os.listdir('images'):
                 os.remove(f"images/{i}")
