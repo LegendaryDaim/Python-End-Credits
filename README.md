@@ -24,8 +24,8 @@ Changing fonts will be done from config.py file.
 
 Here is how end result might look like: https://youtu.be/LU-EkXFXgqM
 
-Python Version Python 3.6.2
-gspread         # gspread-3.6.0
-pillow          # pillow-8.0.1
-ffmpeg-python   # ffmpeg-python-0.2.0 future-0.18.2
-PyQt5           # PyQt5-5.15.1 PyQt5-sip-12.8.1
+Python Version Python 3.6.2   
+gspread         # gspread-3.6.0   
+pillow          # pillow-8.0.1   
+ffmpeg-python   # ffmpeg-python-0.2.0 future-0.18.2   
+PyQt5           # PyQt5-5.15.1 PyQt5-sip-12.8.1   
