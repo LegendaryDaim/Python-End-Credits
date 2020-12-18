@@ -22,7 +22,7 @@ So I didn't find an easy way of inserting absolute path into Pillow module.
 
 Changing fonts will be done from config.py file. 
 
-Here is how end result might look like: https://youtu.be/LU-EkXFXgqM
+Here is how end result might look like: https://youtu.be/TU3L0_slsEE
 
 Python Version Python 3.6.2   
 gspread         # gspread-3.6.0   
